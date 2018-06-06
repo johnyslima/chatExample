@@ -34,7 +34,7 @@ class Chat implements MessageComponentInterface {
         // The connection is closed, remove it, as we can no longer send it messages
         $this->clients->detach($conn);
 
-        echo "Connection {$conn->resourceId} has disconnected. What a shame\n";
+        echo "Connection {$conn->resourceId} has disconnected. What a shame!!!!\n";
     }
 
     public function onError(ConnectionInterface $conn, \Exception $e) {
